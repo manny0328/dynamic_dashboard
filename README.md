@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Crypto Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a dynamic and interactive dashboard for displaying cryptocurrency data. It is built using React and leverages several components and libraries to provide a comprehensive and visually appealing user experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Header Section**: Includes a title and a brief description of the dashboard's purpose.
+- **Data Visualization**: Implements multiple visualizations including line charts and bar charts.
+- **Interactive Elements**: Provides dropdowns for selecting different cryptocurrencies.
+- **Responsive Design**: Ensures the dashboard works well on both desktop and mobile devices.
+- **Styling and UX**: Uses CSS for styling to create a visually appealing and user-friendly interface.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Axios for data fetching
+- Recharts for data visualization
+- CSS for styling
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+- **Header**: Displays the title of the dashboard.
+- **CryptoLineChart**: Displays price trends of selected cryptocurrencies using a line chart.
+- **CryptoBarChart**: Displays the market capitalization of top cryptocurrencies using a bar chart.
+- **DataTable**: Displays detailed information about the cryptocurrencies in a table format.
+- **Dropdown**: Allows users to select a cryptocurrency from a dropdown menu.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup Instructions
 
-### `npm run build`
+Follow these steps to set up and run the project locally:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (>=14.x)
+- npm (>=6.x) or yarn (>=1.x)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   git clone https://github.com/manny0328/dynamic-dashboard.git
+   cd dynamic-dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
+# or
+yarn install
+Running the Project
+Start the development server:
 
-## Learn More
+npm start
+# or
+yarn start
+Open your browser and navigate to http://localhost:3000 to view the dashboard.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Building for Production
+Create a production build:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+npm run build
+# or
+yarn build
+The production-ready files will be in the build directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deploying the Project
+To deploy the project, you can use platforms like GitHub Pages, Netlify, Vercel, etc. Here is a brief guide on how to deploy to GitHub Pages:
 
-### Analyzing the Bundle Size
+Install the GitHub Pages package:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+npm install gh-pages --save-dev
+# or
+yarn add gh-pages --dev
+Add the following properties to your package.json:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+json
+"homepage": "http://manny0328.github.io/dynamic_dashboard",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+Deploy the application:
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm run deploy
+# or
+yarn deploy
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deoloyed link: https://dynamic-dashboard-knza.onrender.com
